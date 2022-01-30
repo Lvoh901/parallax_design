@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+body, html{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 400;
+}
+
+.pimg1, .pimg2, .pimg3, .pimg4, .pimg5{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /*fixed = gives parallax; scroll = gives normal scroll*/
+    background-attachment: fixed;
+}
+
+.pimg1{
+    background-image: url(https://images.pexels.com/photos/6611630/pexels-photo-6611630.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    min-height: 110%;
+}
+
+.pimg2{
+    background-image: url(https://images.pexels.com/photos/459762/pexels-photo-459762.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    min-height: 100%;
+}
+
+.pimg3{
+    background-image: url(https://images.pexels.com/photos/5303957/pexels-photo-5303957.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    min-height: 100%;
+}
+
+.pimg4{
+    background-image: url(https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    min-height: 100%;
+}
+
+.pimg5{
+    background-image: url(https://images.pexels.com/photos/5961216/pexels-photo-5961216.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    min-height: 110%;
+}
+
+.section{
+    text-align: center;
+    padding: 50px 80px;
+    color: white;
+    font-size: 20px;
+}
+
+.foot{
+    color: black;
+}
+
+.ptext{
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 27px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+@media (max-width: 568px){
+    .pimg1, .pimg2, .pimg3, .pimg4{
+        background-attachment: scroll;
+    }
+}
